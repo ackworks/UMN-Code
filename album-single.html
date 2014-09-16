@@ -1,0 +1,414 @@
+<!doctype html>
+<html>
+<head>
+	<!-- ## SITE META ## -->
+	<meta charset="utf-8">
+	<title>MusicVent | Music & Event Responsive Html5 Template by QuadCodes</title>
+	<meta name="description" content="MusicVent is Music & Event Responsive Html5 Template by QuadCodes">
+	<meta name="author" content="Mandar Shirke">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="assets/img/placeholder/favicon.ico">
+		
+	<!-- ## LOAD STYLSHEETS ## -->
+	<link rel="stylesheet" media="all" href="assets/css/style.css"/>
+	
+	<!-- ## GOOGLE FONTS ## -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
+		
+	<!-- ## LOAD JAVASCRIPTS ## -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+	<script src="assets/js/library.js" type="text/javascript"></script>
+	<script src="assets/js/jplayer/jquery.jplayer.min.js" type="text/javascript"></script>
+	<script src="assets/js/jplayer/jplayer.playlist.min.js" type="text/javascript"></script>		
+	<script src="assets/js/init.js" type="text/javascript"></script>
+	
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- ## JPLAYER ## -->	
+	<script type="text/javascript">
+	$(document).ready(function(){
+		new jPlayerPlaylist({
+			jPlayer: "#jquery_jplayer_1",
+			cssSelectorAncestor: "#jp_container_1"
+		}, [
+			{
+				title:"Whistle Blower",
+				artist:"Adam Jamescuz",
+				mp3:"http://3.s3.envato.com/files/5513511/preview.mp3",
+				oga:"http://www.jplayer.org/audio/ogg/TSP-01-Cro_magnon_man.ogg",
+				soundcloud: "#",
+				itunes: "#"
+			},
+			{
+				title:"Tight distorted house",
+				artist:"Adam Jamescuz",
+				mp3:"http://0.s3.envato.com/files/288358/preview.mp3",
+				oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg",
+				poster: "http://www.jplayer.org/audio/poster/Miaow_640x360.png",
+				itunes: "#",		
+			},
+			{
+				title:"Because We Are Young",
+				artist: "Alba Coherta",
+				mp3:"http://2.s3.envato.com/files/28809242/preview.mp3",
+				oga:"http://www.jplayer.org/audio/ogg/TSP-07-Cybersonnet.ogg",
+				download: "#",		
+			},
+			{
+				title:"Central Part",
+				artist: "Joesacco",
+				mp3:"http://3.s3.envato.com/files/15643019/preview.mp3",
+				oga:"http://www.jplayer.org/audio/ogg/Miaow-01-Tempered-song.ogg",
+				soundcloud: "#",
+				itunes: ""
+			},
+			{
+				title:"Sunset on the Terrace",
+				artist: "Dejans",
+				mp3:"http://0.s3.envato.com/files/2208995/preview.mp3",
+				oga:"http://www.jplayer.org/audio/ogg/Miaow-02-Hidden.ogg",
+				soundcloud: "#",
+				itunes: ""
+			}
+		], {
+			swfPath: "./assets/js/jplayer/",
+			supplied: "mp3, oga",
+			smoothPlayBar: true,
+		});
+		// CALL PLAYLIST CUSTOM FUNCTION
+		$("#jquery_jplayer_1").bind($.jPlayer.event.loadeddata, function(event) { 
+			jPlayerPlus();
+   		});
+	});
+	</script>	
+
+</head>
+
+<body>
+
+<!-- ## LOGO ## -->
+<aside id="logo-bar">
+	<div id="logo"><a href="index.html"><img src="assets/img/placeholder/logo.png" alt="LOGO" /></a></div>
+	<div id="ajax-load"></div>
+</aside>
+
+<!-- ## PAGE GLOBAL ## -->
+<section id="page-global">
+
+	<!-- ## NAV HEADER ## -->
+	<header id="nav-header" class="clearfix">
+		<!-- ## PRIMARY NAV ## -->
+		<nav id="primary-nav">
+			<ul class="clearfix">
+				<li class="active">
+					<a href="albums.html">
+						<i class="icon-music-1"></i>
+						<p>Albums</p>
+					</a>
+					<ul>
+						<li class="active"><a href="album-single.html">Album Single</a></li>
+						<li><a href="#">Newest</a></li>
+						<li><a href="#">Popular</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="artists.html">
+						<i class="icon-user-1"></i>
+						<p>Artists</p>
+					</a>
+					<ul>
+						<li><a href="artist-single.html">Artist Single</a></li>
+						<li><a href="#">Newest</a></li>
+						<li><a href="#">Popular</a></li>
+					</ul>					
+				</li>
+				<li>
+					<a href="events.html">
+						<i class="icon-calendar-2"></i>
+						<p>Events</p>
+					</a>
+					<ul>
+						<li><a href="event-single.html">Event Single</a></li>
+						<li><a href="#">Newest</a></li>
+						<li><a href="#">Ending Soon</a></li>
+					</ul>					
+				</li>
+				<li>
+					<a href="blog.html">
+						<i class="icon-book-open"></i>
+						<p>Blog</p>
+					</a>
+					<ul>
+						<li><a href="blog-single.html">Blog Single</a></li>
+						<li><a href="#">Newest</a></li>
+						<li><a href="#">Popular</a></li>
+					</ul>					
+				</li>
+				<li>
+					<a href="gallery.html">
+						<i class="icon-picture"></i>
+						<p>Gallery</p>
+					</a>
+					<ul>
+						<li><a href="gallery.html">Newest</a></li>
+						<li><a href="gallery.html">Popular</a></li>
+					</ul>					
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon-plus-squared"></i>
+						<p>Pages</p>
+					</a>
+					<ul>
+						<li><a href="fullwidth.html">Fullwidth</a></li>
+						<li><a href="404.html">404 Error</a></li>
+					</ul>					
+				</li>				
+				<li>
+					<a href="contact.html">
+						<i class="icon-email"></i>
+						<p>Contact</p>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		
+		<!-- ## SEC NAV ## -->
+		<nav id="sec-nav">
+			<ul class="clearfix"></ul>
+		</nav>
+		
+		<!-- ## MOBILE NAV ## -->
+		<ul id="mobileNav">
+			<li><a href="#"><i class="icon-menu"></i> Navigation <i class="icon-down-open-big"></i></a>
+				<ul class="clearfix"></ul>
+			</li>
+		</ul>		
+		
+	</header>
+	<!-- ## NAV HEADER END ## -->
+
+	<!-- ## PAGE WRAPPER ## -->
+	<div id="page-wrapper">
+	
+		<!-- ## PAGE ## -->
+		<section id="page">
+		
+			<!-- ## FIXY WRAPPER ## -->
+			<div id="fixy">
+				<!-- ## PAGE HEADER ## -->
+				<header id="page-header">
+					<h1>Album. <span>Browse through tracks </span></h1>
+				</header>
+			
+				<!-- ## CONTENT META ## -->
+				<nav id="content-meta">
+					<div class="container">
+						<!-- ## CATEGORIES ## -->
+						<ul class="arrow-list clearfix">
+							<li>GENRES &#9658;</li>
+							<li>Drum</li>
+							<li>Bass</li>
+						</ul>
+						
+						<!-- ## SOCIAL ## -->
+						<ul class="social-share">
+							<li>Share +
+								<ul class="clearfix">
+									<li><a class="facebook" href="#"><i class="icon-facebook"></i></a></li>
+									<li><a class="twitter" href="#"><i class="icon-twitter"></i></a></li>
+									<li><a class="gplus" href="#"><i class="icon-gplus"></i></a></li>
+									<li><a class="pinterest" href="#"><i class="icon-pinterest"></i></a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				
+			</div>
+			<!-- ## FIXY WRAPPER END ## -->
+			
+			<!-- ## PAGE CONTENT ## -->
+			<div class="container">
+				<section id="page-content" class="albumPadding">
+				
+					<!-- BLOG-META START -->
+					<div class="blog-meta">
+						<div class="text-gradient-blog"></div>
+						<div class="hover-post-head clearfix">
+							<div class="hover-post-title">
+								<h2 class="pf-heading"><i class="icon-music-1"></i>&nbsp; AudioJungle - Envato</h2>
+							</div>
+						</div>
+						<div class="hover-post-meta clearfix">
+							<div class="hover-post-metas">
+								<i class="icon-heart-1"></i>
+								<a class="hover-post-meta-like" href="#">
+									<span>03</span>
+									<span>LIKES</span>
+								</a>
+							</div>								
+							<div class="hover-post-metas">
+								<i class="icon-clock-1"></i>
+								<a class="hover-post-meta-date" href="#">
+									<span>March</span>
+									<span>2013</span>
+								</a>								
+							</div>
+							<div class="hover-post-metas last">
+								<i class="icon-chat"></i>
+								<a class="hover-post-meta-comment" href="#">
+									<span>03</span>
+									<span>COMMENTS</span>
+								</a>
+							</div>         			                       			
+						</div>
+					</div>
+					<!-- BLOG-META END -->				
+				
+					<!-- ## PLAYER ## -->
+					<div id="jp_container_1" class="jp-audio">
+						<div class="jp-type-playlist">
+							<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+							<div class="album-wrapper clearfix">
+								<!-- ## ALBUM POSTER IMAGE ## -->
+								<div class="album-base">
+									<img src="http://1.bp.blogspot.com/-U9SjkLkLZH8/UHQHf1DGbPI/AAAAAAAAFWc/rR3MVz7ot6w/s400/2.jpg" alt="Album Poster" />
+								</div>
+								<div class="album-controls">
+									<!-- ## TRACK INFO ## -->
+									<div class="track-info">
+										<h3 class="track-heading"><i class="icon-note-beamed"></i> <span id="th-title"></span></h3>
+										<p class="track-by"><i class="icon-user-1"></i> <span id="th-artist"></span></p>
+									</div>
+									<!-- ## CONTROLS ## -->
+									<div class="jp-gui jp-interface">
+										<ul class="jp-controls clearfix">
+											<li><a href="javascript:;" class="jp-previous" tabindex="1"><i class="icon-backward"></i></a></li>
+											<li><a href="javascript:;" class="jp-play" tabindex="1"><i class="icon-play"></i></a></li>
+											<li><a href="javascript:;" class="jp-pause" tabindex="1"><i class="icon-pause"></i></a></li>
+											<li><a href="javascript:;" class="jp-next" tabindex="1"><i class="icon-forward"></i></a></li>
+											<li><a href="javascript:;" class="jp-stop" tabindex="1"><i class="icon-stop"></i></a></li>
+										</ul>
+										<!-- ## PROGRESS BAR ## -->
+										<div class="jp-progress">
+											<div class="jp-seek-bar">
+												<div class="jp-play-bar"></div>
+											</div>
+											<div class="jp-current-time"></div>
+											<div class="jp-duration"></div>
+										</div>
+									</div>							
+								</div>
+							</div>
+										
+							<!-- ## PLAY LIST ## -->
+							<div class="playlist-heading">Track List 
+								<!-- ## SHUFFLE/REPEAT ## -->					
+								<ul class="jp-toggles clearfix">
+									<li><a href="javascript:;" class="jp-shuffle" tabindex="1" title="shuffle"><i class="icon-shuffle-1"></i> Shuffle</a></li>
+									<li><a href="javascript:;" class="jp-shuffle-off" tabindex="1" title="shuffle off"><i class="icon-shuffle-1"></i>Shuffle Off</a></li>
+									<li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat"><i class="icon-loop"></i> Repeat</a></li>
+									<li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off"><i class="icon-loop"></i> Repeat Off</a></li>
+								</ul>
+							</div>
+							<!-- ## TRACK LIST ## -->
+							<div class="jp-playlist">
+								<ul>
+									<li></li>
+								</ul>
+							</div>
+							<!-- ## PLAYER FALLBACK ## -->
+							<div class="jp-no-solution">
+								<span>Update Required</span>
+								To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+							</div>
+						</div>
+					</div>
+					<!-- ## PLAYER END ## -->
+
+					<!-- POST CONTENT -->
+					<div class="postContent transparent">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae facere quam officiis magnam asperiores id quibusdam quidem eaque sed incidunt! Modi magni deleniti veritatis expedita doloribus aperiam alias autem numquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor voluptatum laudantium quibusdam iusto molestias ut suscipit illo quisquam culpa atque. Voluptatibus quis cupiditate error tenetur optio doloremque. Sed sit optio.
+					</div>
+					<!-- POST CONTENT END -->
+					
+				</section>
+			</div>
+			<!-- ## PAGE CONTENT END ## -->	
+			
+		</section>
+		<!-- ## PAGE END ## -->
+		
+	</div>
+	<!-- ## PAGE WRAPPER END ## -->
+	
+	<!-- ## WIDGET AREA ## -->
+	<section id="widgetArea">
+		<div class="container">
+			<div class="row">
+				<!-- ## WIDGET 1 ## -->
+				<div class="col-4 col">
+					<div class="widget">
+						<h3 class="widgetTitle">Flickr Widget</h3>
+						<!-- FLICKR -->
+						<ul id="flickr" class="clearfix"></ul>
+					</div>
+				</div>
+				<!-- ## WIDGET 2 ## -->
+				<div class="col-4 col">
+					<div class="widget">
+						<h3 class="widgetTitle">Text Widget</h3>
+						<p class="textBlock">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi voluptates sint deleniti quia cumque libero nam laborum sequi</p>
+					</div>
+				</div>
+				<!-- ## WIDGET 3 ## -->
+				<div class="col-4 col">
+					<div class="widget">
+						<h3 class="widgetTitle">Social Link Widget</h3>
+						<!-- ## SOCIAL NETWORKS List ## -->
+						<ul id="qcSocialIntro" class="clearfix">
+							<li><a href="#"><img alt="image" src="assets/img/theme/facebook.png" class="tips" title="FACEBOOK"/></a></li>
+							<li><a href="#"><img alt="image" src="assets/img/theme/twitter.png" class="tips" title="TWITTER"/></a></li>
+							<li><a href="#"><img alt="image" src="assets/img/theme/dribbble.png" class="tips" title="DRIBBBLE"/></a></li>
+							<li><a href="#"><img alt="image" src="assets/img/theme/flickr.png" class="tips" title="FLICKR"/></a></li>
+							<li><a href="#"><img alt="image" src="assets/img/theme/google.png" class="tips" title="GOOGLE"/></a></li>
+							<li><a href="#"><img alt="image" src="assets/img/theme/youtube.png" class="tips" title="YOUTUBE"/></a></li>
+							<li><a href="#"><img alt="image" src="assets/img/theme/vimeo.png" class="tips" title="VIMEO"/></a></li>
+							<li><a href="#"><img alt="image" src="assets/img/theme/skype.png" class="tips" title="SKYPE"/></a></li>
+							<li><a href="#"><img alt="image" src="assets/img/theme/linkedin.png" class="tips" title="LINKEDIN"/></a></li>
+							<li><a href="#"><img alt="image" src="assets/img/theme/digg.png" class="tips" title="DIGG"/></a></li>
+						</ul>
+					</div>
+				</div>
+			
+			</div>
+		</div>
+	</section>
+	<!-- ## WIDGET AREA END ## -->
+	
+	<!-- ## FOOTER ## -->
+	<footer id="PriFooter">
+		<div class="container clearfix">
+			<!-- ## COPYRIGHTS ## -->
+			<p id="copyrights">Copyright © 2014 <a href="https://twitter.com/#!/QuadCodes" target="_blank">QuadCodes</a> Hand-Crafted by <a href="https://twitter.com/#!/impixem" target="_blank">Mandar Shirke</a></p>
+			<!-- ## FOOTER NAV ## -->
+			<nav id="footerNav">
+				<ul>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Privacy</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
+	<!-- ## FOOTER END ## -->	
+	
+</section>
+<!-- ## PAGE GLOBAL END ## -->
+
+</body>
+
+</html>
